@@ -1,0 +1,23 @@
+.testimonial {
+    background: #222;
+    color: #fff;
+    padding: 4rem 2rem;
+  
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #d0caa3;
+      padding-left: 1rem;
+      margin: 0;
+  
+      p {
+        font-size: 1.25rem;
+      }
+  
+      footer {
+        margin-top: 1rem;
+        font-weight: bold;
+        color: #ccc;
+      }
+    }
+  }
+  

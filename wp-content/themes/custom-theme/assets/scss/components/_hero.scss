@@ -1,0 +1,51 @@
+.hero {
+    background-color: #0e0e0e;
+    color: #fff;
+    padding: 5rem 2rem;
+  
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__text {
+      flex: 1 1 50%;
+      max-width: 600px;
+  
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+      }
+  
+      h2 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #d0caa3;
+      }
+  
+      p {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+      }
+  
+      .buttons {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  
+    &__image {
+      flex: 1 1 45%;
+  
+      img {
+        width: 100%;
+        border-radius: 1rem;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  

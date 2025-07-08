@@ -1,0 +1,239 @@
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease; }
+  .btn.primary {
+    background: #d0caa3;
+    color: #000; }
+    .btn.primary:hover {
+      background: #bfb78c; }
+  .btn.secondary {
+    background: #fff;
+    color: #000; }
+    .btn.secondary:hover {
+      background: #f0f0f0; }
+
+.site-header {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 1rem 0;
+  border-bottom: 2px solid #d0caa3; }
+  .site-header .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+  .site-header .site-branding a,
+  .site-header .site-branding h1,
+  .site-header .site-branding p {
+    color: #d0caa3;
+    margin: 0; }
+  .site-header .site-branding .site-title a {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-decoration: none; }
+  .site-header .site-branding .site-description {
+    font-size: 0.875rem;
+    font-style: italic;
+    color: #bbb; }
+  .site-header .site-navigation {
+    position: relative; }
+    .site-header .site-navigation .primary-menu {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .site-header .site-navigation .primary-menu li a {
+        color: #d0caa3;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color 0.3s ease; }
+        .site-header .site-navigation .primary-menu li a:hover, .site-header .site-navigation .primary-menu li a:focus {
+          color: #fff; }
+    .site-header .site-navigation .menu-toggle {
+      display: none;
+      background: transparent;
+      border: 2px solid #d0caa3;
+      color: #d0caa3;
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer; }
+
+/* Responsive header */
+@media (max-width: 768px) {
+  .site-header .header-inner {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .site-header .site-navigation {
+    width: 100%; }
+    .site-header .site-navigation .primary-menu {
+      flex-direction: column;
+      display: none;
+      gap: 1rem;
+      margin-top: 1rem; }
+    .site-header .site-navigation .primary-menu.active {
+      display: flex; }
+    .site-header .site-navigation .menu-toggle {
+      display: inline-block; } }
+.site-footer {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 2rem 0;
+  border-top: 2px solid #d0caa3;
+  text-align: center; }
+  .site-footer .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; }
+  .site-footer .footer-navigation .footer-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .site-footer .footer-navigation .footer-menu li a {
+      color: #d0caa3;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem; }
+      .site-footer .footer-navigation .footer-menu li a:hover, .site-footer .footer-navigation .footer-menu li a:focus {
+        color: #fff; }
+  .site-footer p {
+    font-size: 0.875rem;
+    color: #bbb;
+    margin: 0; }
+
+@media (max-width: 768px) {
+  .site-footer .footer-inner {
+    gap: 0.5rem; }
+  .site-footer .footer-navigation .footer-menu {
+    flex-direction: column;
+    gap: 0.75rem; } }
+.hero {
+  background-color: #0e0e0e;
+  color: #fff;
+  padding: 5rem 2rem; }
+  .hero__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+  .hero__text {
+    flex: 1 1 50%;
+    max-width: 600px; }
+    .hero__text h1 {
+      font-size: 3.5rem;
+      font-weight: 700; }
+    .hero__text h2 {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d0caa3; }
+    .hero__text p {
+      margin-bottom: 2rem;
+      font-size: 1rem; }
+    .hero__text .buttons {
+      display: flex;
+      gap: 1rem; }
+  .hero__image {
+    flex: 1 1 45%; }
+    .hero__image img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); }
+
+.features {
+  background: #111;
+  padding: 4rem 2rem; }
+  .features ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0; }
+    .features ul li {
+      display: flex;
+      align-items: center;
+      gap: 1rem; }
+      .features ul li img {
+        width: 32px;
+        height: 32px; }
+      .features ul li span {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff; }
+
+.stats {
+  background: #f5f5f5;
+  padding: 4rem 2rem; }
+  .stats .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem; }
+  .stats .stat {
+    text-align: center; }
+    .stats .stat h2 {
+      font-size: 2.5rem;
+      color: #d0caa3; }
+    .stats .stat p {
+      font-size: 1rem;
+      color: #333; }
+
+.testimonial {
+  background: #222;
+  color: #fff;
+  padding: 4rem 2rem; }
+  .testimonial blockquote {
+    font-style: italic;
+    border-left: 4px solid #d0caa3;
+    padding-left: 1rem;
+    margin: 0; }
+    .testimonial blockquote p {
+      font-size: 1.25rem; }
+    .testimonial blockquote footer {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #ccc; }
+
+.cta {
+  background: #d0caa3;
+  color: #000;
+  text-align: center;
+  padding: 4rem 2rem; }
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; }
+  .cta .btn {
+    background: #000;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease; }
+    .cta .btn:hover {
+      background: #333; }
+
+.landing-page main {
+  max-width: 1440px;
+  margin: 0 auto; }
+.landing-page section {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+.landing-page .features ul {
+  margin-top: 2rem; }
+
+/*# sourceMappingURL=style.css.map */
